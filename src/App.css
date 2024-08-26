@@ -1,0 +1,290 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #eaf3fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mortgage-calculator {
+  display: flex;
+  flex-direction: row;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 900px;
+}
+
+.form-container {
+  padding: 40px;
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.results-container {
+  padding: 40px;
+  background-color: #08233c;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 0;
+  color: white;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.results-container img {
+  max-width: 100%;
+  height: auto;
+}
+.results {
+  text-align: left;
+}
+
+.results-h {
+  border: 2px solid transparent;
+  border-top-color: #f8e71c;
+  background-color: #07344d;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #f8e71c;
+}
+
+.results-container h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.results-container h3 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.results-container h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.result-amount-month {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #ffdd57;
+}
+
+.result-amount-total {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.result-note {
+  font-size: 14px;
+  color: #c4c4c4;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #d3d3d3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+.radio-option {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.radio-option:hover {
+  border-color: #e6ef40;
+  background-color: #e6ef40;
+  cursor: pointer;
+}
+
+.radio-container-vertical {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  row-gap: 5px;
+}
+
+.form-group-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  background-color: #cdfc4b;
+  color: black;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+button img {
+  margin-right: 8px;
+}
+
+button.clear-button {
+  background-color: #ff6b6b;
+  padding: 10px;
+  font-size: 14px;
+}
+
+button.clear-button:hover {
+  background-color: #ff4c4c;
+}
+
+button:hover {
+  background-color: #90b520;
+}
+
+input:hover {
+  border-color: #e6ef40;
+  cursor: pointer;
+}
+
+.clear-all {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.clear-all a {
+  color: #808080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.clear-all a:hover {
+  text-decoration: underline;
+}
+
+.form-group-inline {
+  gap: 20px;
+}
+
+.mortgage-calculator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mortgage-calculator-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d3b66;
+}
+
+button img {
+  height: 20px;
+}
+.form-group-inline {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group-inline .input-group {
+  position: relative;
+  width: 100%;
+}
+
+.form-group-inline .input-group input {
+  width: 100%;
+  padding-right: 40px; /* Increased padding to make room for the unit label */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-group-inline .input-group .unit-label {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-20%);
+  color: #5f6c7b;
+  font-weight: bold;
+  pointer-events: none;
+  font-size: 0.9rem; /* Adjust font size */
+}
+
+.input-group input:focus + .unit-label {
+  color: #000; /* Changes the color of the unit label when input is focused */
+}
+
+.input-group input:focus {
+  border-color: #ccd5ff;
+  outline: none;
+}
+
+.input-group-currency {
+  position: relative;
+  width: 100%;
+}
+
+.input-group-currency input {
+  width: 100%;
+  padding-right: 30px; /* Adjust padding to make room for the currency symbol */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.input-group-currency .currency-symbol {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-60%);
+  color: #5f6c7b;
+  font-weight: bold;
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.input-group-currency input:focus + .currency-symbol {
+  color: #000;
+}
+
+.input-group-currency input:focus {
+  border-color: #ccd5ff;
+  outline: none;
+}
